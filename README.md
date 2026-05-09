@@ -1,10 +1,8 @@
-
-
 # 🛒 Joan's Minimart — Grocery Calculator
 
 A full-featured grocery **Point-of-Sale (POS)** web app built with React + Vite. Designed for Joan's Minimart, it handles everything from product management and cart tracking to official sales invoices with tax breakdowns and transaction history.
 
-🔗 **Live Site:** [joanfaith24.github.io/grocery-calculator](https://joanfaith24.github.io/grocery-calculator)
+🔗 **Live Site:** [joan-minimart-calculator.netlify.app](https://joan-minimart-calculator.netlify.app)
 
 ---
 
@@ -90,8 +88,10 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 # Build for production
 npm run build
 
-# Deploy to GitHub Pages
-npm run deploy
+# Push to GitHub (Netlify auto-deploys)
+git add .
+git commit -m "your update message"
+git push
 ```
 
 ---
@@ -100,14 +100,14 @@ npm run deploy
 
 ```
 src/
-├── App.jsx              # Main app — state, logic, layout
-├── App.css              # All styles
-├── ProductList.jsx      # Product list with 3-dot edit/delete menu
-├── Cart.jsx             # Shopping cart with payment flow
-├── AddProduct.jsx       # Add new product form
-├── PrintReceipt.jsx     # Sales invoice receipt page
+├── App.jsx               # Main app — state, logic, layout
+├── App.css               # All styles
+├── ProductList.jsx       # Product list with 3-dot edit/delete menu
+├── Cart.jsx              # Shopping cart with payment flow
+├── AddProduct.jsx        # Add new product form
+├── PrintReceipt.jsx      # Sales invoice receipt page
 ├── TransactionSearch.jsx # Search past transactions by serial number
-└── main.jsx             # React entry point
+└── main.jsx              # React entry point
 ```
 
 ---
@@ -121,6 +121,8 @@ src/
 | CSS (vanilla) | Styling |
 | localStorage | Cart, product, cashier & transaction persistence |
 | open.er-api.com | Live currency exchange rates |
+| Netlify | Hosting & continuous deployment |
+| GitHub | Version control |
 
 ---
 
